@@ -1,4 +1,4 @@
-import NetflixPage from '../src/components/NetflixPage/NetflixPage'
+import NetflixHome from '../src/components/netflixHome/NetflixHome'
 
 
 
@@ -8,7 +8,7 @@ function HomePage () {
   return (
   <>
    <div>
-     <NetflixPage />
+     <NetflixHome />
    </div>
   </>
   )

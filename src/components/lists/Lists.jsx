@@ -1,4 +1,4 @@
-import NetflixPage from "../NetflixPage/NetflixPage";
+import NetflixHome from "../netflixHome/NetflixHome";
 import React, { useEffect, useState } from 'react'
 import Database from '../database/Database'
 

@@ -5,7 +5,7 @@ import Database from '../database/Database'
 import Lists from "../lists/Lists"
 
 
-function NetflixPage (){
+function NetflixHome (){
 
 
     const [movieList, setMovieList] = useState([]);
@@ -37,4 +37,4 @@ function NetflixPage (){
 
 }
 
-export default NetflixPage
+export default NetflixHome
