@@ -29,6 +29,14 @@ import infos from external service(API TMDB):
 
 create a Fetch function for import movie infos from API Database
 
+2) creation of react components
+    -database
+    -header
+    -featured
+    -lists
+    -movieRow
+    -footer
+
 
 
 

@@ -1,7 +1,7 @@
 import NetflixHome from "../netflixHome/NetflixHome";
 import React, { useEffect, useState } from 'react'
 import Database from '../database/Database'
-
+import MovieRow from '../movieRow/MovieRow'
 
 export default function Lists (){
 
@@ -24,10 +24,8 @@ export default function Lists (){
     return(
         <>
         {movieList.map((item, key) => (
-
-            <div>
-                {item.title}
-            </div>
+ 
+        <MovieRow key={key} title={item.title} items={item.items} />
         
         ))}
         
