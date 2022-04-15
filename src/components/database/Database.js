@@ -23,7 +23,7 @@ export default {
             },
             {
                 slug: 'trending',
-                title: 'Recommended for you',
+                title: 'Recommended',
                 items: await basicFetch(`/trending/all/week&api_key=${API_KEY}`)
             },
             {

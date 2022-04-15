@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Database from '../database/Database'
 
 import Lists from "../lists/Lists"
+import MovieRow from '../movieRow/MovieRow';
 
 
 function NetflixHome (){
@@ -28,6 +29,7 @@ function NetflixHome (){
            
        <div className="page">
            <Lists />
+           <MovieRow />
        </div>
 
 
