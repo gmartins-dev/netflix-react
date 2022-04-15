@@ -8,9 +8,6 @@ function HomePage () {
   return (
   <>
    <div>
-     HeeLLLoooW
-   </div>
-   <div>
      <NetflixPage />
    </div>
   </>

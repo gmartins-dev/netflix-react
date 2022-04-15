@@ -1,12 +1,9 @@
-
+import NetflixPage from "../NetflixPage/NetflixPage";
 import React, { useEffect, useState } from 'react'
 import Database from '../database/Database'
 
-import Lists from "../lists/Lists"
 
-
-function NetflixPage (){
-
+export default function Lists (){
 
     const [movieList, setMovieList] = useState([]);
 
@@ -22,19 +19,24 @@ function NetflixPage (){
         loadAll();
         }, [] );
 
+
+
     return(
+        <>
+        {movieList.map((item, key) => (
 
+            <div>
+                {item.title}
+            </div>
         
-           
-       <div className="page">
-           <Lists />
-       </div>
-
-
-
+        ))}
         
-    )
+        
+        </>
+
+
+
+
+    );
 
 }
-
-export default NetflixPage
