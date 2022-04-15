@@ -1,27 +1,13 @@
-import React, { useEffect } from 'react'
-import Database from '../src/components/database/Database'
-import '../GlobalStyle.css'
+//Importar tudo que for global para essa pagina
+import '../src/globalStyle.css'
 
-function App (){
+function App ({Component, pageProps}) {
 
-    useEffect(() => {
-        const loadAll = async () => {
-        //importing full list from tmdb api database
-        let list = await Database.getHomeList();
-        console.log(list);
-        }
+    return(
 
-
-        loadAll();
-    }, [] );
-
-   
-
-    return (
-        <div>
-            hello world
-        </div>
+        <Component {...pageProps} />
     )
+
 }
 
 export default App
